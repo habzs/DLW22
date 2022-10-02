@@ -29,7 +29,7 @@ Apart from that, the screen displays would also allow non-smartphone users, seni
 We created a dynamic model that tracks both plates, clutter, cups & tables, and connects the information to determine the vacancy of a table. This was implemented through openCV. If the hawker owner chooses to move tables around, our model will still be able to track correctly and accurately provide the required data
 
 ## Unreal Engine 5 (UE5) Simulations
-By creating a fully configurable environment in UE5, we can train our models without the need to feed it real-world images. Furthermore, we can dynamically move user controlled actors to interfere with the environment, simulating real-life circumstances
+By creating a fully configurable environment in UE5, we can train our models without the need to feed it real-world images. Furthermore, we can dynamically move user controlled actors to interfere with the environment, simulating real-life circumstances </br>
 ![Position](https://raw.githubusercontent.com/habzs/DLW22/main/images/position.gif)
 
 ## Internet-Of-Things through Responsive Websites
