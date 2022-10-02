@@ -1,4 +1,5 @@
 # UnrealHawker DLW2022
+---
 
 # Problem Statement
 Finding seats at a hawker is always a challenge, especially during peak periods. In all likelihood, you have to physically go down and visually check if there are any seats at all. This would in turn waste time on finding space (especially for people with limited lunchtime). What if there was a convenient way to check if there are seats at a hawker and where it might be?
@@ -57,9 +58,12 @@ Start by running the camWithCalibration.py. Point the virtual camera toward the 
 - Press 'C' to start calibrating the tables.
 - Plates and cups will begin to detect.
 - Press 'q' to exit program.
+<<<<<<< HEAD
 
 # Contributors
 🗿 [Owen Lee / Habzs] (https://github.com/habzs)
 🐔 [Ryan Goh / Gyanroh](https://github.com/Gyanroh)
 🐓 [Kai / SlothKai](https://github.com/SlothKai)
 🌗 [Ryan Phoen / rphoen] (https://github.com/rphoen)
+=======
+>>>>>>> a44ef2a2eaa845d23881c1b32abc7f02f2f10167
