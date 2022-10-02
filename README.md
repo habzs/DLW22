@@ -31,6 +31,9 @@ We created a dynamic model that tracks both plates, clutter, cups & tables, and 
 ## Unreal Engine 5 (UE5) Simulations
 By creating a fully configurable environment in UE5, we can train our models without the need to feed it real-world images. Furthermore, we can dynamically move user controlled actors to interfere with the environment, simulating real-life circumstances </br>
 ![Position](https://raw.githubusercontent.com/habzs/DLW22/main/images/position.gif)
+![Moving](https://github.com/habzs/DLW22/blob/main/images/moving.gif)
+
+https://github.com/habzs/DLW22/blob/main/images/moving.gif
 ![IMG_3](https://github.com/habzs/DLW22/blob/main/images/image.png)
 
 
