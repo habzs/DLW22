@@ -1,5 +1,6 @@
 # UnrealHawker DLW2022
 
+
 ## Problem Statement
 Finding seats at a hawker is always a challenge, especially during peak periods. In all likelihood, you have to physically go down and visually check if there are any seats at all. This would in turn waste time on finding space (especially for people with limited lunchtime). What if there was a convenient way to check if there are seats at a hawker and where it might be?
 
