@@ -58,12 +58,9 @@ Start by running the camWithCalibration.py. Point the virtual camera toward the 
 - Press 'C' to start calibrating the tables.
 - Plates and cups will begin to detect.
 - Press 'q' to exit program.
-<<<<<<< HEAD
 
 # Contributors
 🗿 [Owen Lee / Habzs] (https://github.com/habzs)
 🐔 [Ryan Goh / Gyanroh](https://github.com/Gyanroh)
 🐓 [Kai / SlothKai](https://github.com/SlothKai)
 🌗 [Ryan Phoen / rphoen] (https://github.com/rphoen)
-=======
->>>>>>> a44ef2a2eaa845d23881c1b32abc7f02f2f10167
