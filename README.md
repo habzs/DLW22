@@ -33,7 +33,6 @@ By creating a fully configurable environment in UE5, we can train our models wit
 ![Position](https://raw.githubusercontent.com/habzs/DLW22/main/images/position.gif)
 ![Moving](https://github.com/habzs/DLW22/blob/main/images/moving.gif)
 
-https://github.com/habzs/DLW22/blob/main/images/moving.gif
 ![IMG_3](https://github.com/habzs/DLW22/blob/main/images/image.png)
 
 
