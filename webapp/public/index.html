@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>UnrealHawker.</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <script src="scripts/moment.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body style="background-color: rgb(248 250 252);">
+  <!-- Start your project here-->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top" style="background-color:#101329;">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+
+      <!-- Navbar brand -->
+      <a class="navbar-brand text-white"
+        style="font-family: 'Outfit', sans-serif; font-weight: 600; --mdb-text-opacity: .7;" href="#">UnrealHawker.</a>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-black">
+          <!-- Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+
+  <div class="container-fluid" style="margin-top: 20px; margin-bottom: 30px;">
+    <div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title fs-2 fw-bold">NTU Koufu</h5>
+          <p class=" card-text d-flex justify-content-between align-items-center">
+            North-Spine
+            <span id="counter" class="justify-content-end">4 tables available.</span>
+          </p>
+
+          <div class="container text-center" style="margin-bottom: 110px; margin-top: 110px;">
+            <div class="row">
+              <div class="col-sm" style="margin-bottom:50px;">
+                <span class="fw-bold fs-5">Table One</span>
+                <div>
+                  <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                  </svg>
+                </div>
+                <button id="one" type="button" class="btn btn-outline-dark" style="width:50px; height:50px;">
+                </button>
+                <div>
+                  <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                  </svg>
+                </div>
+              </div>
+              <div class="col-sm" style="margin-bottom:50px;">
+                <span class="fw-bold fs-5">Table Two</span>
+                <div>
+                  <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                  </svg>
+                </div>
+                <svg height="50" width="50">
+                  <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                </svg>
+                <button id="two" type="button" class="btn btn-outline-dark" style="width:50px; height:50px;">
+                </button>
+                <svg style="visibility: hidden" height="50" width="50">
+                  <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                </svg>
+                <div>
+                  <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                  </svg>
+                </div>
+              </div>
+              <div class="col-sm" style="margin-bottom:50px;">
+                <span class=" fw-bold fs-5">Table Three</span>
+                <div>
+                  <div>
+                    <svg height="50" width="50">
+                      <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                    </svg>
+                  </div>
+                </div>
+                <button id="three" type="button" class="btn btn-outline-dark" style="width:50px; height:50px;">
+                </button>
+                <div>
+                  <div>
+                    <svg height="50" width="50">
+                      <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm">
+                <span class="fw-bold fs-5 ">Table Four</span>
+                <div>
+                  <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                  </svg>
+                </div>
+
+                <div>
+                  <!-- <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                  </svg> -->
+                  <button id="four" type="button" class="btn btn-outline-dark"
+                    style="width:50px; height:50px;"></button>
+                  <!-- <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                  </svg> -->
+                </div>
+
+                <!-- <div>
+                  <svg height="50" width="50">
+                    <circle cx="25" cy="25" r="12.5" stroke="#4d4b54" stroke-width="5" fill="none" />
+                  </svg>
+                </div> -->
+
+              </div>
+            </div>
+
+          </div>
+
+          <span class="fw-bold fs-6">Legend</span>
+          <div class="row">
+            <div class="col-sm d-flex align-items-center"><button type="button" class="btn btn-success"
+                style="width:5px; height:5px;"></button>
+              <span class="align-items-center" style="padding-left: 5px">- Vacant</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm d-flex align-items-center"><button type="button" class="btn btn-danger"
+                style="width:5px; height:5px;"></button>
+              <span class="align-items-center" style="padding-left: 5px">- Occupied</span>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="container-fluid" style="margin-top: 20px; margin-bottom: 50px;">
+    <div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title fs-2 fw-bold">Analysis</h5>
+
+
+
+          <p class=" card-text d-flex justify-content-between align-items-center">
+            Share of occupancy
+            <span id="counter" class="justify-content-end">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-mdb-toggle="dropdown" aria-expanded="false">
+                  Time
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a id="dataOne" class="dropdown-item">6AM-9AM</a></li>
+                  <li><a id="dataTwo" class="dropdown-item">9AM-12PM</a></li>
+                  <li><a id="dataThree" class="dropdown-item">12PM-2PM</a></li>
+                  <li><a id="dataFour" class="dropdown-item">2PM-5PM</a></li>
+                  <li><a id="dataFive" class="dropdown-item">5PM-8PM</a></li>
+                  <li><a id="dataSix" class="dropdown-item">8PM-10PM</a></li>
+                </ul>
+              </div>
+            </span>
+          </p>
+
+
+          <div class="container text-center" style="position: relative; height:300px; width:300px; margin-bottom: 50px">
+            <div>
+              <span id="chartLabel">Breakfast (6AM-9AM)</span>
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!-- Navbar -->
+  <!-- End your project here-->
+
+  <script>
+    // const firebaseConfig = {
+    //   apiKey: "--YOUR API KEY--",
+    //   authDomain: "escendotwo.firebaseapp.com",
+    //   databaseURL: "--YOUR DB URL--",
+    //   projectId: "escendotwo",
+    //   storageBucket: "escendotwo.appspot.com",
+    //   messagingSenderId: "373625997495",
+    //   appId: "--YOUR DB URL--",
+    //   measurementId: "G-54Y5ZYX5V7"
+    // };
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyD2X-yBfawUzAuEv0Dk8mw3N4tpGoAJFv0",
+      authDomain: "escendotwo.firebaseapp.com",
+      databaseURL: "https://escendotwo-default-rtdb.firebaseio.com",
+      projectId: "escendotwo",
+      storageBucket: "escendotwo.appspot.com",
+      messagingSenderId: "373625997495",
+      appId: "https://escendotwo-default-rtdb.firebaseio.com",
+      measurementId: "G-54Y5ZYX5V7"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.database();
+
+
+  </script>
+
+  <script src="scripts/vacantScript.js"></script>
+
+
+  <script>
+    const data1 = {
+      labels: [
+        'Table 1',
+        'Table 2',
+        'Table 3',
+        'Table 4'
+      ],
+      datasets: [{
+        label: 'My First Dataset',
+        data: [10, 12, 8, 60],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)',
+          'rgb(41, 194, 46)'
+        ],
+        hoverOffset: 4
+      }]
+    };
+
+    const data2 = {
+      labels: [
+        'Table 1',
+        'Table 2',
+        'Table 3',
+        'Table 4'
+      ],
+      datasets: [{
+        label: 'My First Dataset',
+        data: [25, 15, 6, 4],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)',
+          'rgb(41, 194, 46)'
+        ],
+        hoverOffset: 4
+      }]
+    };
+
+    const data3 = {
+      labels: [
+        'Table 1',
+        'Table 2',
+        'Table 3',
+        'Table 4'
+      ],
+      datasets: [{
+        label: 'My First Dataset',
+        data: [28, 34, 20, 18],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)',
+          'rgb(41, 194, 46)'
+        ],
+        hoverOffset: 4
+      }]
+    };
+
+    const data4 = {
+      labels: [
+        'Table 1',
+        'Table 2',
+        'Table 3',
+        'Table 4'
+      ],
+      datasets: [{
+        label: 'My First Dataset',
+        data: [24, 51, 15, 10],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)',
+          'rgb(41, 194, 46)'
+        ],
+        hoverOffset: 4
+      }]
+    };
+
+    const data5 = {
+      labels: [
+        'Table 1',
+        'Table 2',
+        'Table 3',
+        'Table 4'
+      ],
+      datasets: [{
+        label: 'My First Dataset',
+        data: [30, 22, 38, 10],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)',
+          'rgb(41, 194, 46)'
+        ],
+        hoverOffset: 4
+      }]
+    };
+
+    const data6 = {
+      labels: [
+        'Table 1',
+        'Table 2',
+        'Table 3',
+        'Table 4'
+      ],
+      datasets: [{
+        label: 'My First Dataset',
+        data: [28, 34, 20, 18],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)',
+          'rgb(41, 194, 46)'
+        ],
+        hoverOffset: 4
+      }]
+    };
+
+    var dataSelector = 0;
+
+    var dataType = [data1, data2, data3, data4, data5, data6];
+    var pieOne = document.getElementById('dataOne');
+    var pieTwo = document.getElementById('dataTwo');
+    var pieThree = document.getElementById('dataThree');
+    var pieFour = document.getElementById('dataFour');
+    var pieFive = document.getElementById('dataFive');
+    var pieSix = document.getElementById('dataSix');
+    var pieLabel = document.getElementById('chartLabel')
+
+    pieOne.addEventListener('click', event => {
+      dataSelector = 0;
+      pieLabel.innerHTML = "Breakfast (6AM-9AM)";
+      reRender();
+    });
+
+    pieTwo.addEventListener('click', event => {
+      dataSelector = 1;
+      pieLabel.innerHTML = "Brunch (9AM-12PM)";
+      reRender();
+    });
+
+    pieThree.addEventListener('click', event => {
+      dataSelector = 2;
+      pieLabel.innerHTML = "Lunch (12PM-2PM)";
+      reRender();
+    });
+
+    pieFour.addEventListener('click', event => {
+      dataSelector = 3;
+      pieLabel.innerHTML = "Teatime (2PM-5PM)";
+      reRender();
+    });
+
+    pieFive.addEventListener('click', event => {
+      dataSelector = 4;
+      pieLabel.innerHTML = "Dinner (5PM-8PM)";
+
+      reRender();
+    });
+
+    pieSix.addEventListener('click', event => {
+      dataSelector = 5;
+      pieLabel.innerHTML = "Supper (8PM-1030PM)";
+      reRender();
+    });
+
+    var config = {
+      type: 'doughnut',
+      data: dataType[dataSelector],
+    };
+
+
+    var myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+
+    function reRender() {
+      myChart.destroy();
+
+      config = {
+        type: 'doughnut',
+        data: dataType[dataSelector],
+      };
+
+      myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+
+
+    }
+
+
+
+  </script>
+
+
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+</body>
+
+</html>
