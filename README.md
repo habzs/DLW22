@@ -31,6 +31,8 @@ We created a dynamic model that tracks both plates, clutter, cups & tables, and 
 ## Unreal Engine 5 (UE5) Simulations
 By creating a fully configurable environment in UE5, we can train our models without the need to feed it real-world images. Furthermore, we can dynamically move user controlled actors to interfere with the environment, simulating real-life circumstances </br>
 ![Position](https://raw.githubusercontent.com/habzs/DLW22/main/images/position.gif)
+![IMG_2](https://github.com/habzs/DLW22/blob/main/images/image.png)
+
 
 ## Internet-Of-Things through Responsive Websites
 Additional sensors (pressure, ultrasonic) could be used to assist in more accurate vacancy data. Implementation and iteration is simple through Progressive Web Applications. We can directly update the results of our Model to users online. This enables users to make informed decisions based on our findings. Such models can also be configured and tested using UE5.
